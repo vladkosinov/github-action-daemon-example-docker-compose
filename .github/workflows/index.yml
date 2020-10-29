@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - main
+  schedule:
+    - cron: "0 */4 * * *"
 
 jobs:
   start:
@@ -19,9 +21,10 @@ jobs:
           repository: 'nicolargo/docker-influxdb-grafana'
           path: 'docker-influxdb-grafana'
           
-      - name: try to run it
-        run: |
-          sudo mkdir -p /srv/docker/grafana/data
-          cd docker-influxdb-grafana
-          sudo chown -R 472:472 /srv/docker/grafana/data
-          docker-compose up & npx localtunnel --port 3000
+      - uses: vladkosinov/github-action-demon@v1
+        with:
+          command: |
+            sudo mkdir -p /srv/docker/grafana/data \
+            cd docker-influxdb-grafana \
+            sudo chown -R 472:472 /srv/docker/grafana/data \
+            docker-compose up & npx localtunnel --port 3000
