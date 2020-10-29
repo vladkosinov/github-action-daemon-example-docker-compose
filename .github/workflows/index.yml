@@ -22,5 +22,6 @@ jobs:
       - name: try to run it
         run: |
           sudo mkdir -p /srv/docker/grafana/data
+          cd docker-influxdb-grafana
           docker-compose up -d
           sudo chown -R 472:472 /srv/docker/grafana/data
