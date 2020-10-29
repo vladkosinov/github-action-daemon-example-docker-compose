@@ -24,4 +24,4 @@ jobs:
           sudo mkdir -p /srv/docker/grafana/data
           cd docker-influxdb-grafana
           sudo chown -R 472:472 /srv/docker/grafana/data
-          docker-compose up
+          docker-compose up & npx localtunnel --port 3000
