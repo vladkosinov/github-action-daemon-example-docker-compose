@@ -10,9 +10,8 @@ jobs:
     name: Start
 
     steps:
-      - uses: actions/checkout@v2
 
-      - name: echo env 
+      - name: echo env
         run: |
           pwd;
           env
