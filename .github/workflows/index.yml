@@ -19,10 +19,6 @@ jobs:
           repository: 'nicolargo/docker-influxdb-grafana'
           path: 'docker-influxdb-grafana'
       
-      - name: run localtunnel
-        run: |
-          npx localtunnel --port 3000
-
       - uses: vladkosinov/github-action-daemon@v1.0.0
         with:
           command: |
