@@ -21,7 +21,7 @@ jobs:
           repository: 'nicolargo/docker-influxdb-grafana'
           path: 'docker-influxdb-grafana'
           
-      - uses: vladkosinov/github-action-demon@v1.0.0
+      - uses: vladkosinov/github-action-daemon@v1.0.0
         with:
           command: |
             sudo mkdir -p /srv/docker/grafana/data && \
