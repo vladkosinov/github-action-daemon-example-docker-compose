@@ -18,11 +18,15 @@ jobs:
         with:
           repository: 'nicolargo/docker-influxdb-grafana'
           path: 'docker-influxdb-grafana'
-          
+      
+      - name: run localtunnel
+        run: |
+          npx localtunnel --port 3000
+
       - uses: vladkosinov/github-action-daemon@v1.0.0
         with:
           command: |
             sudo mkdir -p /srv/docker/grafana/data && \
             sudo chown -R 472:472 /srv/docker/grafana/data && \
             cd docker-influxdb-grafana && \
-            docker-compose up & npx localtunnel --port 3000
+            docker-compose up & ./localtunnel-live.sh
