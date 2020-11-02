@@ -2,5 +2,5 @@
 
 This example runs `influxdb/telegraf/grafana` in docker using `docker-compose.yml` from an external repo [nicolargo/docker-influxdb-grafana](https://github.com/nicolargo/docker-influxdb-grafana/blob/master/docker-compose.yml) and exposes public URL with localtunnel
 
-Live url: https://wet-eel-1.loca.lt
+Live url: https://wicked-owl-61.loca.lt
 
