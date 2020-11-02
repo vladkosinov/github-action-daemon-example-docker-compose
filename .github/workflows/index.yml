@@ -1,4 +1,4 @@
-name: Test it out
+name: Running
 on:
   push:
     branches:
