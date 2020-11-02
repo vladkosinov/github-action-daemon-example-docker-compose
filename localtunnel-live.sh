@@ -9,7 +9,7 @@ while read -r; do
         git add README.md;
         git commit -m "Update Live URL" \
            -c user.name="Github Actions" \
-           -c user.email='${{ github.actor }}@users.noreply.github.com';
+           -c user.email="$GITHUB_ACTOR@users.noreply.github.com";
         git push origin HEAD;
     fi;
 done;
