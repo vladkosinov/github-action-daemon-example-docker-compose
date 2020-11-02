@@ -1,4 +1,4 @@
-#!/usr/bin/env
+#!/usr/bin/env bash
 
 npx supervisor -i . -- "$(which npx)" localtunnel --port 3000 | \
 while read -r; do
