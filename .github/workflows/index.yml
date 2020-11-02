@@ -24,5 +24,4 @@ jobs:
           command: |
             sudo mkdir -p /srv/docker/grafana/data && \
             sudo chown -R 472:472 /srv/docker/grafana/data && \
-            cd docker-influxdb-grafana && \
-            docker-compose up & ./localtunnel-live.sh
+            ./localtunnel-live.sh & (cd docker-influxdb-grafana && docker-compose up)
