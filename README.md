@@ -1,6 +1,9 @@
 # Example github-action-daemon with docker-compose
 
-This example runs `influxdb/telegraf/grafana` in docker using `docker-compose.yml` from an external repo [nicolargo/docker-influxdb-grafana](https://github.com/nicolargo/docker-influxdb-grafana/blob/master/docker-compose.yml) and exposes public URL with localtunnel
+This example:
+- runs `awesome-compose/wordpress-mysql` from [docker/awesome-compose](https://github.com/docker/awesome-compose) using [github-action-daemon](https://github.com/vladkosinov/github-action-daemon)
+- exposes public URL with localtunnel, check [localtunnel-live.sh](https://github.com/vladkosinov/github-action-daemon-example-docker-compose/blob/main/localtunnel-live.sh)
+
 
 Live url: https://splendid-bobcat-85.loca.lt
 
