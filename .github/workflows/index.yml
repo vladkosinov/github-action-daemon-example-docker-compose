@@ -22,4 +22,4 @@ jobs:
       - uses: vladkosinov/github-action-daemon@v1.0.0
         with:
           command: |
-            ./localtunnel-live.sh & (cd awesome-compose/wordpress-mysql && docker-compose up)
+            ./localtunnel-live.sh & (cd awesome-compose/nextcloud-postgres && docker-compose up)
