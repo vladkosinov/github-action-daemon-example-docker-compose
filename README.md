@@ -5,5 +5,5 @@ This example:
 - exposes public URL with localtunnel, check [localtunnel-live.sh](https://github.com/vladkosinov/github-action-daemon-example-docker-compose/blob/main/localtunnel-live.sh)
 
 
-Live url: https://quiet-turkey-10.loca.lt
+Live url: https://smart-bear-14.loca.lt
 
