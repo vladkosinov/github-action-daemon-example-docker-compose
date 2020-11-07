@@ -8,6 +8,7 @@ This package just a demonstration of an easy way of running applications using G
 
 Please don't do this.
 
+## Description
 
 This example:
 - runs `awesome-compose/react-rust-postgres` from [docker/awesome-compose](https://github.com/docker/awesome-compose) using [github-action-daemon](https://github.com/vladkosinov/github-action-daemon)
