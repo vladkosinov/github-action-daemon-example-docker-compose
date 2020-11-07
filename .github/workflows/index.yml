@@ -2,9 +2,9 @@ name: Running
 on:
   push:
     branches:
-      - main
-  schedule:
-    - cron: "0 */1 * * *"
+      - no
+#   schedule:
+#     - cron: "0 */1 * * *"
 
 jobs:
   start:
